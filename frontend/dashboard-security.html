@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Security Panel</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Log Student Entry/Exit</h1>
+    <form id="securityForm">
+      <input type="text" name="rollno" placeholder="Roll Number" required />
+      <select name="action">
+        <option value="OUT">OUT</option>
+        <option value="IN">IN</option>
+      </select>
+      <button type="submit">Log</button>
+    </form>
+    <h2>Log History</h2>
+    <div id="logData"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
